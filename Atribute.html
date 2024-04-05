@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+
+<center>
+    <div  id="dark" class="border mt-5 h-250 w-50 ">
+    <h2 class="mt-3"> Dark/Light Mode</h2>
+    <p>Click the button between dark and light mode for this page.</p>
+
+    <button onclick="myFunction()"  id="myButton"   class="mt-3"> dark mode</button>
+       
+</div> 
+<script>
+        function myFunction()
+         {
+            var a = document.getElementById("dark");
+           
+             
+            if(  a.style.background !='black',
+              a.style.color !="white")
+             {
+                 a.style.background='black';
+                 a.style.color="white";
+             }
+             else
+             {
+                 a.style.background='white';
+                 a.style.color="black";
+             }
+        }
+        </script>
+
+
+</center>
+</body>
+</html>
